@@ -29,7 +29,7 @@ const Compose = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = await fetchQuery({
-      uri: "http://localhost:9000/api/mail/send",
+      uri: "https://rose-dull-hen.cyclic.app/api/mail/send",
       method: "POST",
       body: { ...mail },
     });
