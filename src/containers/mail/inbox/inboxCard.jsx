@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react/cjs/react.development";
 
 const InboxCard = ({ inbox }) => {
-  const [raed, setRead] = useState("false");
-
+  const [read, setRead] = useState("false");
+  console.log(read);
   const handleClick = (e) => {
     setRead("true");
   };
